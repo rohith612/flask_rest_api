@@ -1,0 +1,17 @@
+*for context error in the database
+
+models.py
+
+from flask_sqlalchemy import SQLAlchemy
+db = SQLAlchemy()
+
+__init__.py
+
+db.init_app(app)
+
+any route.py
+
+@users.route('/create', methods=['GET'])
+def create_db():
+    db.create_all()
+    return jsonify({'massage': 'Db created!'})
