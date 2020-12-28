@@ -5,7 +5,6 @@ import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from rest_api.models import User
-from rest_api import db
 from rest_api.config import Config
 from rest_api.utils import token_required
 from rest_api.models import db
