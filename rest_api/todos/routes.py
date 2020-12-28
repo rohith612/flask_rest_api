@@ -33,7 +33,7 @@ def update_todo(current_user, id):
 def get_one_todo(current_user, id):
     pass
 
-
+# delete list item from the todos
 @todos.route('/todo/<id>', methods=['DELETE'])
 @token_required
 def delete_todo(current_user, id):
